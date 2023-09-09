@@ -1,6 +1,6 @@
-import { FC } from 'react';
+import { FC } from "react";
 
-import * as S from './styles';
+import * as S from "./styles";
 
 // NOTE: This is an example component to be used as a reference
 const Example: FC = () => {

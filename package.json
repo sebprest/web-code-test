@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "test": "jest src",
-    "tsc:check": "tsc --noEmit"
+    "tsc:check": "tsc --noEmit",
+    "format:write": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\""
   },
   "engines": {
     "node": "16.15.1",
@@ -30,6 +32,7 @@
     "jest": "28.1.0",
     "jest-environment-jsdom": "28.1.0",
     "jest-styled-components": "7.0.8",
+    "prettier": "3.0.3",
     "typescript": "4.7.3"
   }
 }
