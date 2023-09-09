@@ -24,6 +24,12 @@
     "sourceMap": true,
     "strict": false,
     "target": "es5",
+    "paths": {
+      "components/*": ["./src/components/*"],
+      "pages/*": ["./src/pages/*"],
+      "queries/*": ["./src/queries/*"],
+      "types/*": ["./src/types/*"]
+    }
   },
   "include": [
     "next-env.d.ts",
