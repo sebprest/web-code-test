@@ -1,4 +1,5 @@
 import { useQuery } from "@apollo/client";
+import Head from "next/head";
 import MainContainer from "components/Layout";
 import { useRouter } from "next/router";
 import GET_BLOG_POST from "queries/getBlogPost";
@@ -21,6 +22,9 @@ function BlogPost() {
 
   return (
     <MainContainer>
+      <Head>
+        <title>{data.blogPost.title}</title>
+      </Head>
       <h1>{data.blogPost.title}</h1>
       <p>{data.blogPost.body}</p>
     </MainContainer>

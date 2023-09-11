@@ -1,4 +1,5 @@
 import { useQuery } from "@apollo/client";
+import Head from "next/head";
 import BlogTitle from "components/PageHeading";
 import MainContainer from "components/Layout";
 import BlogPostList from "components/BlogPostList";
@@ -19,6 +20,9 @@ export default function BlogListingPage() {
 
   return (
     <MainContainer>
+      <Head>
+        <title>From the blog</title>
+      </Head>
       <BlogTitle>From the blog</BlogTitle>
       <BlogPostList posts={data?.blogPostCollection.items} />
     </MainContainer>
