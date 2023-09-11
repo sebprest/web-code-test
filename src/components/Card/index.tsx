@@ -3,16 +3,18 @@ import Link from "next/link";
 import * as S from "./styles";
 
 function Card({
+  id,
   title,
   description,
   wide,
 }: {
+  id: string;
   title: string;
   description: string;
   wide: boolean;
 }) {
   return (
-    <Link href="/blog">
+    <Link href={`/${id}`}>
       <S.Container wide={wide}>
         <S.Inner>
           <S.Headline>{title}</S.Headline>

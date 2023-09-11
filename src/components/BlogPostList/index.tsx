@@ -16,6 +16,7 @@ function BlogPostList(props: BlogPostListProps) {
         return (
           <Card
             key={post.sys.id}
+            id={post.sys.id}
             title={post.title}
             description={post.preface}
             wide={isWide}
