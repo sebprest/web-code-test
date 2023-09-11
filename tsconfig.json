@@ -28,6 +28,7 @@
       "components/*": ["./src/components/*"],
       "pages/*": ["./src/pages/*"],
       "queries/*": ["./src/queries/*"],
+      "theme/*": ["./src/theme/*"],
       "types/*": ["./src/types/*"]
     }
   },
